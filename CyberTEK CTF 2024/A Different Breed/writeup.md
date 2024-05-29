@@ -21,7 +21,9 @@ result: plaintext = b'\x00\x06\x13\x00\x0c\x06\r\x0f\x0f\x1a3\x0f\x05\x07\x01\x0
 
 2ND STEP:  FACTOR N
 
-Knowing the IV, you know the 2nd half of the flag and therefore the 128*3 most significant bits of one of the prime numbers. 
-Knowing these few bits, you can optimize factorisation of N and then get the value of the primes P and Q.
+Knowing the IV, you know the 2nd half of the flag and therefore the 128*3 most significant bits of one of the prime numbers.
+
+Knowing these few bits, you can optimize factorisation of N and then get the value of the primes P and Q. (USING COPPERSMITH FACTORIZATION METHOD)
+
 knowing the values of P and Q you can convert them to bytes. 
 And deduce your flag ! (classic RSA decryption)
